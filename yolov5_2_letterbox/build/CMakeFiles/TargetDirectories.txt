@@ -1,3 +1,0 @@
-/home/YOLO_DNN_Blogpost_24Dec/yolov5_2_letterbox/build/CMakeFiles/main.dir
-/home/YOLO_DNN_Blogpost_24Dec/yolov5_2_letterbox/build/CMakeFiles/edit_cache.dir
-/home/YOLO_DNN_Blogpost_24Dec/yolov5_2_letterbox/build/CMakeFiles/rebuild_cache.dir
