@@ -213,7 +213,7 @@ If we use n size model for full dataset (5000 images) with command `python yolov
 ## Environment
 
 ## Method 1
-#### Build local docker and compile opencv (1h)
+#### Build local docker and compile opencv (1h), core steps are step 4 & step 5
 >- Step1: download docker follow the guidance https://docs.docker.com/engine/install/ubuntu/ 
 >
 >```
@@ -254,5 +254,10 @@ If we use n size model for full dataset (5000 images) with command `python yolov
 >make install
 >```
 >
->
+>- Step 5: install some library for python.
+>```
+>apt install -y libgl1-mesa-glx
+>pip install -r requirements.txt
+>install opencv-python==4.5.5.64
+>```
 
