@@ -179,9 +179,20 @@ C++ command to process first 20 pictures: `./main no_cuda 20`
     <td align="center">./coco/coco_output_cpp</td>
   </tr>
 </table>
-<img src="./coco/coco_output_py/285.jpg" width="48%" /> <img src=" ./coco/coco_output_cpp/000000000285.jpg" width="48%" />
-<img src="./coco/coco_output_py/724.jpg" width="48%" /> <img src=" ./coco/coco_output_cpp/000000000724.jpg" width="48%" />
-<img src="./coco/coco_output_py/885.jpg" width="48%" /> <img src=" ./coco/coco_output_cpp/000000000885.jpg" width="48%" />
+
+<div>
+  <img src="./coco/coco_output_py/285.jpg" width="48%" /> 
+  <img src="./coco/coco_output_cpp/000000000285.jpg" width="48%" />
+</div>
+<div>
+  <img src="./coco/coco_output_py/724.jpg" width="48%" /> 
+  <img src="./coco/coco_output_cpp/000000000724.jpg" width="48%" />
+</div>
+<div>
+  <img src="./coco/coco_output_py/885.jpg" width="48%" /> 
+  <img src="./coco/coco_output_cpp/000000000885.jpg" width="48%" />
+</div>
+
 
 ### Average precision, average recall and time for different models
 If we use n size model for full dataset (5000 images) with command `python yolov5_evaluate.py --model_weights "weights/yolov5m.onnx" --image_size 5000` 
