@@ -1,4 +1,4 @@
-# Medtronic Tech Challenge finished by Bo-Chen
+# One Tech Challenge finished by Bo-Chen
 
 ## Introduction
 
