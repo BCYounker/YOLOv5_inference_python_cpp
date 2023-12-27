@@ -23,8 +23,7 @@ This project offers a comprehensible and comprehensive C++& python implementatio
 - [Execution](#execution)
 - [Sample](#sample)
 - [Evaluation](#evaluation)
-- [Environemnt_Preparation, Method 1: Vscode with Local Docker (need compile opencv)](#Method-1:-Build-local-docker-and-compile-opencv-(1h))
-- [Environemnt_Preparation, Method 2: Download author's docker image (maybe faster)](#code-struc)
+- [Environment](#environment)
 
 
 
@@ -138,16 +137,33 @@ run for yolov5_3_batch
 
 ## Sample
 
-<!-- First Row with Text Descriptions --> <div style="text-align: center;">    <div style="display: inline-block; width: 48%; text-align: center;">yolov5.py</div>    <div style="display: inline-block; width: 48%; text-align: center;">yolov5_refactor.cpp</div> </div>
-<!-- Second Row with Images --> <img src="./output_py.jpg" width="48%" /> <img src="./output_cpp.jpg" width="48%" /> 
-> cpp and python have same detection result
+<table align="center">
+  <tr>
+    <td align="center">yolov5.py</td>
+    <td align="center">yolov5_refactor.cpp</td>
+  </tr>
+</table>
+<!-- Second Row with Images --> <p align="center">
+  <img src="./output_py.jpg" width="48%" />
+  <img src="./output_cpp.jpg" width="48%" />
+</p>
 
-<!-- First Row with Text Descriptions --> <div style="text-align: center;">    <div style="display: inline-block; width: 48%; text-align: center;">yolov5.py</div>    <div style="display: inline-block; width: 48%; text-align: center;">yolov5_onnxruntime.py</div> </div>
-<!-- Second Row with Images --> <img src="./output_py.jpg" width="48%" /> <img src="./output_py_onnxruntime.jpg" width="48%" /> 
+<table align="center">
+  <tr>
+    <td align="center">yolov5.py</td>
+    <td align="center">yolov5_onnxruntime.py</td>
+  </tr>
+</table>
+<!-- Second Row with Images --> <p align="center"><img src="./output_py.jpg" width="48%" /> <img src="./output_py_onnxruntime.jpg" width="48%" /> </p>
 > Inference time: 107ms vs 17ms
 
-<!-- First Row with Text Descriptions --> <div style="text-align: center;">    <div style="display: inline-block; width: 48%; text-align: center;">yolov5.py</div>    <div style="display: inline-block; width: 48%; text-align: center;">yolov5_letterbox.py</div> </div>
-<!-- Second Row with Images --> <img src="./output_py.jpg" width="48%" /> <img src="./output_py_letterbox.jpg" width="48%" /> 
+<table align="center">
+  <tr>
+    <td align="center">yolov5.py</td>
+    <td align="center">yolov5_letterbox.py</td>
+  </tr>
+</table>
+<!-- Second Row with Images --> <p align="center"> <img src="./output_py.jpg" width="48%" /> <img src="./output_py_letterbox.jpg" width="48%" /> </p>
 > Adding letterbox preprocessing could improve the detection result (more people are detetced)
 
 
@@ -157,7 +173,12 @@ run for yolov5_3_batch
 ### Python and C++ implementation equivalence
 Python command to process first 20 pictures (automatically download and unzip val2017/): `python yolov5_evaluate.py --image_size 20`  
 C++ command to process first 20 pictures: `./main no_cuda 20`
-<!-- First Row with Text Descriptions --> <div style="text-align: center;">    <div style="display: inline-block; width: 48%; text-align: center;">./coco/coco_output_py</div>    <div style="display: inline-block; width: 48%; text-align: center;"> ./coco/coco_output_cpp</div> </div>
+<table align="center">
+  <tr>
+    <td align="center">./coco/coco_output_py</td>
+    <td align="center">./coco/coco_output_cpp</td>
+  </tr>
+</table>
 <img src="./coco/coco_output_py/285.jpg" width="48%" /> <img src=" ./coco/coco_output_cpp/000000000285.jpg" width="48%" />
 <img src="./coco/coco_output_py/724.jpg" width="48%" /> <img src=" ./coco/coco_output_cpp/000000000724.jpg" width="48%" />
 <img src="./coco/coco_output_py/885.jpg" width="48%" /> <img src=" ./coco/coco_output_cpp/000000000885.jpg" width="48%" />
@@ -178,10 +199,10 @@ If we use n size model for full dataset (5000 images) with command `python yolov
 
 
 
-## Environment Preparation
+## Environment
 
-### Method 1: Build local docker and compile opencv (1h)
-
+## Method 1
+#### Build local docker and compile opencv (1h)
 >- Step1: download docker follow the guidance https://docs.docker.com/engine/install/ubuntu/ 
 >
 >```
